@@ -1,10 +1,10 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
 import ProductRecent from '../Components/Product_Recent';
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 
 const Products: React.FC = () => {
-    const { category } = useParams<{ category: string }>()
+    //const { category } = useParams<{ category: string }>()
     return (
         <>
             <NavBar />

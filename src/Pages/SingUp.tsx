@@ -10,7 +10,6 @@ const SingUp: React.FC = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors }
     } = useForm({
         defaultValues: {
             "email": "",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info } from '../utils/type';
+import { Info } from '../types';
 
 interface Props {
     information: Info
