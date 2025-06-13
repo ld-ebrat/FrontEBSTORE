@@ -70,15 +70,15 @@ const Login: React.FC = () => {
                                 <label>
                                     <span>Correo</span>
                                 </label>
-                                <input {...register('email')} className='border border-black w-full py-2 px-1 outline-none' />
+                                <input {...register('email')} className='border rounded-md border-black w-full py-2 px-1 outline-none' />
                             </div>
                             <div className='flex flex-col items-start w-3/5'>
                                 <label>
                                     <span>Contraseña</span>
                                 </label>
-                                <input {...register('pass')} type='password' className='border border-black w-full py-2 px-1 outline-none' />
+                                <input {...register('pass')} type='password' className='border rounded-md border-black w-full py-2 px-1 outline-none' />
                             </div>
-                            <button id="access-entry" onClick={handleSubmit(handleLogin)} className='bg-[#F0DE36] text-black py-3 w-3/5 border border-black'>Login</button>
+                            <button id="access-entry" onClick={handleSubmit(handleLogin)} className='bg-[#F0DE36] text-black py-3 w-3/5 border rounded-md border-black'>Login</button>
                         </div>
                         <div className='flex gap-2'>
                             <label>¿Eres Nuevo?</label>

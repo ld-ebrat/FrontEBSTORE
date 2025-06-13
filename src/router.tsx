@@ -2,12 +2,13 @@ import { RouteObject } from "react-router-dom";
 import Login from "./Pages/Login";
 import SingUp from "./Pages/SingUp";
 import Home from "./Pages/Home";
-import ProtectDashboard from "./Filters/ProtectDashboard";
+//import ProtectDashboard from "./Filters/ProtectDashboard";
 import PersonalInformation from "./Layout/Account/PersonalInformation";
 import AddressInformation from "./Layout/Account/AddressInformation";
 import OrderHistory from "./Layout/Account/OrderHistory";
 import ChangePassword from "./Layout/Account/ChangePassword";
 import Products from "./Pages/Products";
+import Account from "./Pages/Account";
 
 const route: RouteObject[] = [
     {
@@ -24,7 +25,7 @@ const route: RouteObject[] = [
     },
     {
         path:"/account",
-        element:<ProtectDashboard/>,
+        element: <Account/>, //<ProtectDashboard/>,
         children: [
             {
                 path:"/account/personalInformation",
